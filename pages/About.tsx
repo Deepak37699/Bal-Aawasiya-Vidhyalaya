@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye, BookOpen, Star, Heart, Users, MapPin } from 'lucide-react';
+import { Target, Eye, BookOpen, Star, Heart, Users } from 'lucide-react';
 
 const About: React.FC = () => {
   const staffMembers = [
@@ -20,7 +20,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="text-blue-200 max-w-2xl mx-auto">
-            Bal Aawasiya Vidhyalaya has evolved into a premier educational institution in Dhanusha.
+            A premier educational institution in Dhanusha.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ const About: React.FC = () => {
                 Established with a vision to bring quality education to Dhanusha, Bal Aawasiya Vidhyalaya has evolved into a premier educational institution.
               </p>
               <p className="text-slate-600 leading-relaxed">
-                Our campus features modern classrooms, labs, and sports facilities, creating an inspiring environment for holistic growth. We take pride in our journey of transforming young minds.
+                Our campus features modern classrooms, labs, and sports facilities, creating an inspiring environment for holistic growth.
               </p>
             </div>
             <div className="md:w-1/2">
@@ -68,19 +68,19 @@ const About: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex gap-3">
                 <BookOpen className="text-blue-600 flex-shrink-0" size={20} />
-                <span className="text-slate-700">Deliver quality education through innovative teaching methods.</span>
+                <span className="text-slate-700">To deliver quality education through innovative teaching methods.</span>
               </li>
               <li className="flex gap-3">
                 <Heart className="text-blue-600 flex-shrink-0" size={20} />
-                <span className="text-slate-700">Build strong values of discipline, respect, and integrity.</span>
+                <span className="text-slate-700">To build strong values of discipline, respect, and integrity.</span>
               </li>
               <li className="flex gap-3">
                 <Star className="text-blue-600 flex-shrink-0" size={20} />
-                <span className="text-slate-700">Provide opportunities for students to explore their talents.</span>
+                <span className="text-slate-700">To provide opportunities for students to explore their talents and interests.</span>
               </li>
               <li className="flex gap-3">
                 <Users className="text-blue-600 flex-shrink-0" size={20} />
-                <span className="text-slate-700">Foster a positive and inclusive school culture.</span>
+                <span className="text-slate-700">To foster a positive and inclusive school culture.</span>
               </li>
             </ul>
           </div>
@@ -88,7 +88,7 @@ const About: React.FC = () => {
 
         {/* Core Values */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">Our Core Values</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { title: "Excellence", desc: "Striving for the best in academics and character.", color: "bg-amber-100 text-amber-800" },
@@ -106,53 +106,11 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* Leadership Team */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">Leadership Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Principal */}
-            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm hover:shadow-md transition-all group">
-              <div className="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-5 overflow-hidden ring-4 ring-white shadow-lg relative">
-                <img src="https://picsum.photos/400/400?random=50" alt="Dr. Emily Carter" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900">Dr. Emily Carter</h3>
-              <p className="text-blue-600 font-medium mb-3 uppercase tracking-wide text-xs">Principal</p>
-              <p className="text-slate-600 text-sm leading-relaxed px-2">
-                With 20 years in education, Dr. Carter leads with a passion for holistic student success.
-              </p>
-            </div>
-            
-            {/* Vice Principal */}
-            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm hover:shadow-md transition-all group">
-              <div className="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-5 overflow-hidden ring-4 ring-white shadow-lg relative">
-                <img src="https://picsum.photos/400/400?random=51" alt="Mr. John Lee" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900">Mr. John Lee</h3>
-              <p className="text-blue-600 font-medium mb-3 uppercase tracking-wide text-xs">Vice Principal</p>
-              <p className="text-slate-600 text-sm leading-relaxed px-2">
-                Oversees curriculum, extracurriculars, and student wellbeing.
-              </p>
-            </div>
-            
-            {/* Head of Admissions */}
-            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm hover:shadow-md transition-all group">
-              <div className="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-5 overflow-hidden ring-4 ring-white shadow-lg relative">
-                <img src="https://picsum.photos/400/400?random=52" alt="Ms. Sarah Patel" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900">Ms. Sarah Patel</h3>
-              <p className="text-blue-600 font-medium mb-3 uppercase tracking-wide text-xs">Head of Admissions</p>
-              <p className="text-slate-600 text-sm leading-relaxed px-2">
-                Your dedicated guide to joining our supportive community.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Staff Directory */}
+        {/* Staff Directory (Keeping existing structure but can be customized later) */}
         <section className="mb-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Dedicated Staff</h2>
-            <p className="text-slate-500">Meet the passionate educators who nurture our students' potential.</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Teachers</h2>
+            <p className="text-slate-500">Qualified, experienced, and passionate.</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -166,18 +124,13 @@ const About: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="mt-10 text-center">
-            <button className="px-8 py-3 border-2 border-blue-600 text-blue-600 font-bold rounded-full hover:bg-blue-50 transition-all">
-              View Full Directory
-            </button>
-          </div>
         </section>
 
         {/* Location Map Placeholder */}
         <section>
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Location</h2>
-            <p className="text-slate-500">Visit our campus in Dhanushadham</p>
+            <p className="text-slate-500">Dhanushadham -3, Dhanusha</p>
           </div>
           <div className="bg-slate-200 rounded-2xl h-[400px] w-full relative overflow-hidden group shadow-lg border border-slate-200">
              <iframe 

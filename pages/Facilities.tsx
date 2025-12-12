@@ -29,8 +29,8 @@ const Facilities: React.FC = () => {
       icon: <Trophy size={40} />
     },
     {
-      title: "Hygiene & Sanitation",
-      desc: "Clean Drinking Water & Sanitation ensuring health for all students.",
+      title: "Clean Drinking Water & Sanitation",
+      desc: "Ensuring health and hygiene for all students.",
       icon: <Droplets size={40} />
     }
   ];
@@ -41,7 +41,7 @@ const Facilities: React.FC = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Our Facilities</h1>
           <p className="text-blue-200 max-w-2xl mx-auto">
-            Our school boasts well-maintained facilities to support learning and activities.
+            Well-maintained facilities to support learning and activities.
           </p>
         </div>
       </div>

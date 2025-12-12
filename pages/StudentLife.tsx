@@ -27,7 +27,7 @@ const StudentLife: React.FC = () => {
             { title: "Sports", desc: "Football, Cricket, Badminton", icon: <Award size={32} /> },
             { title: "Culture", desc: "Cultural Dance and Music programs", icon: <Music size={32} /> },
             { title: "Public Speaking", desc: "Speech, Debate, and Quiz contests", icon: <Mic2 size={32} /> },
-            { title: "Innovation", desc: "Science exhibitions and Art competitions", icon: <FlaskConical size={32} /> },
+            { title: "Science & Art", desc: "Science exhibitions and Art competitions", icon: <FlaskConical size={32} /> },
           ].map((activity, idx) => (
             <div key={idx} className="bg-slate-50 p-6 rounded-xl text-center hover:bg-white hover:shadow-lg transition-all border border-slate-100">
               <div className="text-blue-600 mb-4 flex justify-center">{activity.icon}</div>
@@ -46,9 +46,6 @@ const StudentLife: React.FC = () => {
              <p className="text-slate-700 leading-relaxed text-lg mb-6">
                We prioritize wellbeing with a focus on discipline, respect, and a friendly atmosphere. We have strict anti-bullying policies and ensure that every student feels valued and heard within our community.
              </p>
-             <button className="px-6 py-2 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition-colors">
-               Learn about our Policies
-             </button>
            </div>
         </section>
 
