@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             </span>
           </div>
           <div className="opacity-90">
-            Dhanushadham -3, Dhanusha
+            Dhanushadham -3, Dhanusha, Nepal
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const Academics: React.FC = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Academics</h1>
           <p className="text-blue-200 max-w-2xl mx-auto">
-            Challenging, motivating, and preparing students for higher education.
+            Challenging, motivating, and preparing students for higher education and future careers.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ const Academics: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Lower Secondary</h3>
               <p className="text-slate-600">
-                Expanding knowledge in Science, Computer Studies, and Languages.
+                Expanding knowledge in Science, Computer Studies, and Languages for holistic development.
               </p>
             </div>
 

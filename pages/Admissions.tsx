@@ -8,7 +8,7 @@ const Admissions: React.FC = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Admissions</h1>
           <p className="text-blue-200 max-w-2xl mx-auto">
-            Join a school where your child will flourish.
+            Join a school where your child will flourish in a safe, supportive setting.
           </p>
         </div>
       </div>
@@ -21,7 +21,7 @@ const Admissions: React.FC = () => {
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Bal Aawasiya Vidhyalaya?</h2>
               <p className="text-slate-700 text-lg leading-relaxed mb-4">
-                Join a school where your child will flourish in a safe, supportive setting with outstanding results. We prioritize academics, character, skills, and wellbeing.
+                We invite parents and guardians to join our vibrant community. We prioritize academics, character, skills, and wellbeing, ensuring your child receives an education that goes beyond textbooks.
               </p>
               <div className="p-4 bg-green-50 border-l-4 border-green-500 rounded text-green-800">
                 <strong>New Admissions Open for 2026 Session!</strong> Secure your child's future with us.
@@ -59,8 +59,15 @@ const Admissions: React.FC = () => {
                  <h2 className="text-xl font-bold text-slate-900">Transport Services</h2>
                </div>
                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
-                 For student safety and convenience, we offer reliable transport services across the Dhanusha district. Our buses are well-maintained, comfortable, and operate on fixed routes. We follow strict safety rules and punctual schedules to ensure smooth daily commutes for your children.
+                 For student safety and convenience, we offer reliable transport services across the Dhanusha district.
                </p>
+               <ul className="space-y-2 text-sm text-slate-700">
+                 <li className="flex items-center gap-2">✓ Well-maintained buses</li>
+                 <li className="flex items-center gap-2">✓ Comfortable seating</li>
+                 <li className="flex items-center gap-2">✓ Fixed routes</li>
+                 <li className="flex items-center gap-2">✓ Strict safety rules</li>
+                 <li className="flex items-center gap-2">✓ Punctual schedules</li>
+               </ul>
              </div>
           </div>
         </div>
