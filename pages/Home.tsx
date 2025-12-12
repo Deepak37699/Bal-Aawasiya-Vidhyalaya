@@ -5,22 +5,22 @@ import { ArrowRight, Calendar, Users, Trophy } from 'lucide-react';
 const Home: React.FC = () => {
   const events = [
     {
-      title: "New Admissions Open 2026",
+      title: "New Admissions Open for 2026 Session",
       date: "Ongoing",
       desc: "Secure your child's future with us. Visit the administration office for details.",
       icon: <Users className="text-blue-500" size={24} />
+    },
+    {
+      title: "Winter Sports Week",
+      date: "February 20, 2026",
+      desc: "Cheer on our teams in athletics, football, and volleyball as we build teamwork and spirit!",
+      icon: <Trophy className="text-orange-500" size={24} />
     },
     {
       title: "Parent-Teacher Meeting",
       date: "January 15, 2026",
       desc: "Join us to discuss student progress and upcoming academic goals.",
       icon: <Calendar className="text-green-500" size={24} />
-    },
-    {
-      title: "Winter Sports Week",
-      date: "February 20, 2026",
-      desc: "Cheer on our teams in athletics, football, and volleyball!",
-      icon: <Trophy className="text-orange-500" size={24} />
     }
   ];
 
@@ -31,20 +31,20 @@ const Home: React.FC = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://picsum.photos/1920/1080?grayscale" 
+            src="https://picsum.photos/1920/1080?school" 
             alt="School Campus" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
+          <h4 className="text-blue-300 font-bold text-lg md:text-xl mb-2 tracking-wide uppercase">Welcome to</h4>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Empowering Minds,<br/> 
-            <span className="text-blue-400">Shaping Futures</span>
+            Bal Aawasiya Vidhyalaya
           </h1>
-          <p className="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-            Welcome to Bal Aawasiya Vidhyalaya in Dhanusha. We prepare students for a bright and successful future in a safe and caring environment.
+          <p className="text-xl md:text-2xl text-slate-100 font-medium mb-8 max-w-3xl mx-auto">
+            Empowering Minds, Shaping Futures in Dhanusha
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -69,18 +69,18 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img 
-                src="https://picsum.photos/800/600" 
+                src="https://picsum.photos/800/600?students" 
                 alt="Students learning" 
                 className="rounded-xl shadow-2xl"
               />
             </div>
             <div className="md:w-1/2">
-              <h4 className="text-blue-600 font-bold uppercase tracking-widest mb-2">Welcome</h4>
+              <h4 className="text-blue-600 font-bold uppercase tracking-widest mb-2">About Us</h4>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                Excellence in Education
+                Welcome to Bal Aawasiya Vidhyalaya
               </h2>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Welcome to Bal Aawasiya Vidhyalaya, where we are committed to providing high-quality education that prepares students for a bright and successful future.
+              <p className="text-slate-600 leading-relaxed mb-6 text-lg">
+                We are committed to providing high-quality education that prepares students for a bright and successful future.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8">
                 In our safe, caring, and stimulating environment in Dhanushadham, every student is encouraged to discover their strengths, achieve their full potential, and become confident, responsible members of society.
@@ -103,9 +103,9 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {events.map((event, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-slate-100">
+              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-slate-100 flex flex-col h-full">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-slate-50 rounded-lg">
+                  <div className="p-3 bg-slate-50 rounded-lg flex-shrink-0">
                     {event.icon}
                   </div>
                   <div>
@@ -113,7 +113,7 @@ const Home: React.FC = () => {
                     <h3 className="text-lg font-bold text-slate-900 leading-snug">{event.title}</h3>
                   </div>
                 </div>
-                <p className="text-slate-600 mb-4">{event.desc}</p>
+                <p className="text-slate-600 mt-auto">{event.desc}</p>
               </div>
             ))}
           </div>
