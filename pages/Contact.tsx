@@ -125,23 +125,18 @@ const Contact: React.FC = () => {
             </form>
           </div>
 
-          {/* Map Placeholder */}
+          {/* Map Embed */}
           <div className="h-full min-h-[400px]">
-             <div className="bg-slate-200 rounded-2xl h-full w-full flex items-center justify-center relative overflow-hidden group border border-slate-200">
-               <div className="absolute inset-0 bg-slate-300 animate-pulse"></div>
-               <div className="z-10 text-center p-6 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg">
-                  <MapPin className="mx-auto text-red-500 mb-2" size={48} />
-                  <h3 className="text-xl font-bold text-slate-800">Find Us Here</h3>
-                  <p className="text-slate-600 mb-4">Dhanushadham -3, Dhanusha</p>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=26.835479,86.062609" 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors shadow-sm"
-                  >
-                    Open in Google Maps
-                  </a>
-               </div>
+             <div className="bg-slate-200 rounded-2xl h-full w-full relative overflow-hidden group border border-slate-200 shadow-md">
+               <iframe 
+                 width="100%" 
+                 height="100%" 
+                 title="School Location"
+                 style={{ border: 0, minHeight: '400px' }}
+                 src="https://maps.google.com/maps?q=26.835479,86.062609&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                 allowFullScreen
+                 loading="lazy"
+               ></iframe>
              </div>
           </div>
         </div>

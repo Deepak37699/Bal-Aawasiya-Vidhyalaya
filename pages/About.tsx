@@ -179,21 +179,16 @@ const About: React.FC = () => {
             <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Location</h2>
             <p className="text-slate-500">Visit our campus in Dhanushadham</p>
           </div>
-          <div className="bg-slate-200 rounded-2xl h-[400px] w-full flex items-center justify-center relative overflow-hidden group">
-             <div className="absolute inset-0 bg-slate-300 animate-pulse"></div>
-             <div className="z-10 text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
-                <MapPin className="mx-auto text-red-500 mb-2" size={48} />
-                <h3 className="text-xl font-bold text-slate-800">Visit Our Campus</h3>
-                <p className="text-slate-600">Dhanushadham -3, Dhanusha</p>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=26.835479,86.062609" 
-                  target="_blank" 
-                  rel="noreferrer"
-                  className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Open in Google Maps
-                </a>
-             </div>
+          <div className="bg-slate-200 rounded-2xl h-[400px] w-full relative overflow-hidden group shadow-lg border border-slate-200">
+             <iframe 
+                width="100%" 
+                height="100%" 
+                title="School Location"
+                style={{ border: 0 }}
+                src="https://maps.google.com/maps?q=26.835479,86.062609&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
           </div>
         </section>
 
